@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="Chrome 55.0.2883 (Windows 8.1 0.0.0)" package="foobar" timestamp="2017-01-14T21:15:41" id="0" hostname="ABBES-PC" make_target="undefined" tests="10" errors="0" failures="0" time="6.124">
+  <testsuite name="Chrome 55.0.2883 (Windows 8.1 0.0.0)" package="AngularJs" timestamp="2017-01-14T21:42:28" id="0" hostname="ABBES-PC" make_target="undefined" tests="10" errors="0" failures="0" time="0.732">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"/>
     </properties>
-    <testcase name="should log ngOnInit" time="0.089" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="About"/>
-    <testcase name="should be readly initialized" time="0.989" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="App"/>
-    <testcase name="should be @AngularClass" time="0.988" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="App"/>
-    <testcase name="should log ngOnInit" time="0.996" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="App"/>
-    <testcase name="should have default data" time="1.006" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Home"/>
-    <testcase name="should have a title" time="0.996" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Home"/>
-    <testcase name="should log ngOnInit" time="1" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Home"/>
-    <testcase name="should have http" time="0.019" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Title"/>
-    <testcase name="should get data from the server" time="0.018" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Title"/>
-    <testcase name="should sent font-size to x-large" time="0.023" classname="..browser-test" package="foobar Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="x-large directive"/>
+    <testcase name="should log ngOnInit" time="0.116" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="About"/>
+    <testcase name="should be readly initialized" time="0.193" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="App"/>
+    <testcase name="should be @AngularClass" time="0.078" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="App"/>
+    <testcase name="should log ngOnInit" time="0.076" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="App"/>
+    <testcase name="should have default data" time="0.063" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Home"/>
+    <testcase name="should have a title" time="0.069" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Home"/>
+    <testcase name="should log ngOnInit" time="0.062" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Home"/>
+    <testcase name="should have http" time="0.027" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Title"/>
+    <testcase name="should get data from the server" time="0.023" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="Title"/>
+    <testcase name="should sent font-size to x-large" time="0.025" classname="..browser-test" package="AngularJs Chrome 55.0.2883 (Windows 8.1 0.0.0)" parentSuites="x-large directive"/>
     <system-out><![CDATA[
 ]]></system-out>
     <system-err/>

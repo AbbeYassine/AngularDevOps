@@ -53,6 +53,10 @@ module.exports = function (config) {
       coverageReporter: {
         type: 'in-memory'
       },
+      junitReporter: {
+        outputFile: './test/test-results.xml',
+        suite: 'models'
+      },
 
       remapCoverageReporter: {
         'text-summary': null,
@@ -78,13 +82,9 @@ module.exports = function (config) {
        * possible values: 'dots', 'progress'
        * available reporters: https://npmjs.org/browse/keyword/karma-reporter
        */
-      reporters: ['mocha', 'coverage', 'remap-coverage', 'jenkins'],
+      reporters: ['mocha', 'coverage', 'remap-coverage', 'junit'],
 
-      jenkinsReporter: {
-        outputFile: 'test-results.xml',
-        suite: 'AngularJs',                 // this will be mapped to the package
-        classnameSuffix: 'browser-test'
-      },
+
       mochaReporter: {
         output: 'test-results.xml'
       },

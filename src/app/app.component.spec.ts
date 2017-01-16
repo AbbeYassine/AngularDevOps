@@ -32,7 +32,7 @@ describe(`App`, () => {
     fixture.detectChanges(); // trigger initial data binding
   });
 
-  it(`should be readly initialized`, () => {
+  /*it(`should be readly initialized`, () => {
     expect(fixture).toBeDefined();
     expect(comp).toBeDefined();
   });
@@ -49,6 +49,6 @@ describe(`App`, () => {
 
     comp.ngOnInit();
     expect(console.log).toHaveBeenCalled();
-  });
+  });*/
 
 });

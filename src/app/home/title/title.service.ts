@@ -1,14 +1,13 @@
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import {Injectable} from '@angular/core';
+import {Http} from '@angular/http';
 
 @Injectable()
 export class Title {
 
   public value = 'Angular 2';
 
-  constructor(
-    public http: Http
-  ) {}
+  constructor(public http:Http) {
+  }
 
   public getData() {
     console.log('Title#getData(): Get Data');
@@ -17,6 +16,18 @@ export class Title {
     return {
       value: 'AngularClass'
     };
+  }
+
+  public additionner(a:number, b:number) {
+    return a + b;
+  }
+
+  public multiplier(a:number, b:number) {
+    return a - b;
+  }
+
+  public diviser(a:number, b:number) {
+    return a / b;
   }
 
 }

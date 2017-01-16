@@ -2,14 +2,14 @@ import {
   inject,
   TestBed
 } from '@angular/core/testing';
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {
   BaseRequestOptions,
   ConnectionBackend,
   Http
 } from '@angular/http';
-import { MockBackend } from '@angular/http/testing';
-import { Title } from './title.service';
+import {MockBackend} from '@angular/http/testing';
+import {Title} from './title.service';
 
 describe('Title', () => {
   beforeEach(() => TestBed.configureTestingModule({
@@ -18,25 +18,31 @@ describe('Title', () => {
       MockBackend,
       {
         provide: Http,
-        useFactory: (backend: ConnectionBackend, defaultOptions: BaseRequestOptions) => {
+        useFactory: (backend:ConnectionBackend, defaultOptions:BaseRequestOptions) => {
           return new Http(backend, defaultOptions);
         },
         deps: [MockBackend, BaseRequestOptions]
       },
       Title
-    ]}));
-
-  it('should have http', inject([ Title ], (title: Title) => {
-    expect(!!title.http).toEqual(true);
+    ]
   }));
 
-  it('should get data from the server', inject([ Title ], (title: Title) => {
-    spyOn(console, 'log');
-    expect(console.log).not.toHaveBeenCalled();
+  it('testing sum', inject([Title], (title:Title) => {
+    const a = 8;
+    const b = 8;
+    expect(title.additionner(a, b)).toEqual(16);
+  }));
 
-    title.getData();
-    expect(console.log).toHaveBeenCalled();
-    expect(title.getData()).toEqual({ value: 'AngularClass' });
+  it('testing multiplication', inject([Title], (title:Title) => {
+    const a = 8;
+    const b = 8;
+    expect(title.multiplier(a, b)).toEqual(64);
+  }));
+
+  it('testing division', inject([Title], (title:Title) => {
+    const a = 8;
+    const b = 8;
+    expect(title.diviser(a, b)).toEqual(1);
   }));
 
 });

@@ -23,7 +23,7 @@ export class Title {
   }
 
   public multiplier(a:number, b:number) {
-    return a - b;
+    return a * b;
   }
 
   public diviser(a:number, b:number) {

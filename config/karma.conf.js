@@ -4,7 +4,7 @@
 
 module.exports = function (config) {
   var testWebpackConfig = require('./webpack.test.js')({env: 'test'});
-  process.env.PHANTOMJS_BIN = 'node_modules/karma-phantomjs-launcher/node_modules/.bin/phantomjs';
+
   var configuration = {
 
       // base path that will be used to resolve all patterns (e.g. files, exclude)
@@ -110,28 +110,16 @@ module.exports = function (config) {
        * available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
        */
       browsers: [
-        'PhantomJS' ,'PhantomJS_custom'
+        'Chrome'
       ],
 
-      // you can define custom flags
       customLaunchers: {
-        'PhantomJS_custom': {
-          base: 'PhantomJS',
-          options: {
-            windowName: 'my-window',
-            settings: {
-              webSecurityEnabled: false
-            },
-          },
-          flags: ['--load-images=true'],
-          debug: true
+        ChromeTravisCi: {
+          base: 'Chrome',
+          flags: ['--no-sandbox']
         }
-      },
-
-      phantomjsLauncher: {
-        // Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
-        exitOnResourceError: true
-      },
+      }
+      ,
 
       /*
        * Continuous Integration mode
@@ -141,6 +129,11 @@ module.exports = function (config) {
     }
     ;
 
+  if (process.env.TRAVIS) {
+    configuration.browsers = [
+      'ChromeTravisCi'
+    ];
+  }
 
   config.set(configuration);
 };

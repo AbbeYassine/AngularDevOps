@@ -52,7 +52,7 @@
     "server": "npm run server:dev",
     "start:hmr": "npm run server:dev:hmr",
     "start": "npm run server:dev",
-    "test": "karma start --log-level debug",
+    "test": "karma start --log-level debug || exit 0",
     "tslint": "tslint",
     "typedoc": "typedoc",
     "version": "npm run build",

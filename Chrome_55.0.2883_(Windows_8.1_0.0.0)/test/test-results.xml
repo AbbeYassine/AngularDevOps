@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 55.0.2883 (Windows 8.1 0.0.0)" package="models" timestamp="2017-01-16T20:16:36" id="0" hostname="ABBES-PC" tests="3" errors="0" failures="1" time="0.186">
+<testsuite name="Chrome 55.0.2883 (Windows 8.1 0.0.0)" package="models" timestamp="2017-01-17T20:30:46" id="0" hostname="ABBES-PC" tests="4" errors="0" failures="1" time="0.204">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"/>
   </properties>
-  <testcase name="Title testing sum" time="0.099" classname="Chrome_55_0_2883_(Windows_8_1_0_0_0).models.Title"/>
-  <testcase name="Title testing multiplication" time="0.054" classname="Chrome_55_0_2883_(Windows_8_1_0_0_0).models.Title">
-    <failure type="">Expected 0 to equal 64.
-    at webpack:///src/app/home/title/title.service.spec.ts:29:0 &lt;- config/spec-bundle.js:85149:40 [ProxyZone]
-    at TestBed.execute (webpack:///~/@angular/core/bundles/core-testing.umd.js:824:0 &lt;- config/spec-bundle.js:13599:23) [ProxyZone]
-    at Object.&lt;anonymous&gt; (webpack:///~/@angular/core/bundles/core-testing.umd.js:911:32 &lt;- config/spec-bundle.js:13686:49) [ProxyZone]
+  <testcase name="Title testing sum" time="0.103" classname="Chrome_55_0_2883_(Windows_8_1_0_0_0).models.Title"/>
+  <testcase name="Title testing multiplication" time="0.061" classname="Chrome_55_0_2883_(Windows_8_1_0_0_0).models.Title"/>
+  <testcase name="Title testing division" time="0.038" classname="Chrome_55_0_2883_(Windows_8_1_0_0_0).models.Title"/>
+  <testcase name="Title fail test" time="0.002" classname="Chrome_55_0_2883_(Windows_8_1_0_0_0).models.Title">
+    <failure type="">Expected 2 to equal 1.
+    at Object.&lt;anonymous&gt; (webpack:///src/app/home/title/title.service.spec.ts:37:0 &lt;- config/spec-bundle.js:85157:19) [ProxyZone]
     at ProxyZoneSpec.onInvoke (webpack:///~/zone.js/dist/proxy.js:79:0 &lt;- config/spec-bundle.js:65564:39) [ProxyZone]
     at Zone.run (webpack:///~/zone.js/dist/zone.js:113:0 &lt;- config/spec-bundle.js:65781:43) [&lt;root&gt; =&gt; ProxyZone]
     at Object.&lt;anonymous&gt; (webpack:///~/zone.js/dist/jasmine-patch.js:102:0 &lt;- config/spec-bundle.js:65279:34) [&lt;root&gt;]
@@ -17,7 +17,6 @@
     at drainMicroTaskQueue (webpack:///~/zone.js/dist/zone.js:433:0 &lt;- config/spec-bundle.js:66101:35) [&lt;root&gt;]
 </failure>
   </testcase>
-  <testcase name="Title testing division" time="0.033" classname="Chrome_55_0_2883_(Windows_8_1_0_0_0).models.Title"/>
   <system-out>
     <![CDATA[
 ]]>

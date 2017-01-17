@@ -45,4 +45,8 @@ describe('Title', () => {
     expect(title.diviser(a, b)).toEqual(1);
   }));
 
+  it('fail test', ()=> {
+    expect(2).toEqual(1);
+  })
+
 });
